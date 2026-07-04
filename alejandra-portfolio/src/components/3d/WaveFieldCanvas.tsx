@@ -6,16 +6,18 @@ import * as THREE from "three";
 
 // Particle grid simulating a radio-signal surface. The cursor emits
 // ripples across the field, like a transmitter touching the spectrum.
-const COLS = 92;
-const ROWS = 50;
 const SPACING = 0.28;
-const FIELD_W = COLS * SPACING;
-const FIELD_H = ROWS * SPACING;
 
 const ROSE = new THREE.Color(0.78, 0.14, 0.4);
 const CORAL = new THREE.Color(0.93, 0.4, 0.22);
 
-function WaveField() {
+function WaveField({ lowPower }: { lowPower: boolean }) {
+  // Fewer particles on phones — keeps the animation smooth on weaker GPUs/battery budgets.
+  const COLS = lowPower ? 46 : 92;
+  const ROWS = lowPower ? 25 : 50;
+  const FIELD_W = COLS * SPACING;
+  const FIELD_H = ROWS * SPACING;
+
   const geoRef = useRef<THREE.BufferGeometry>(null);
   const planeRef = useRef<THREE.Mesh>(null);
   const { camera } = useThree();
@@ -52,7 +54,7 @@ function WaveField() {
       }
     }
     return { positions, colors };
-  }, []);
+  }, [COLS, ROWS]);
 
   const tmpColor = useMemo(() => new THREE.Color(), []);
   const hitPoint = useMemo(() => new THREE.Vector3(), []);
@@ -132,15 +134,15 @@ function WaveField() {
   );
 }
 
-export default function WaveFieldCanvas() {
+export default function WaveFieldCanvas({ lowPower = false }: { lowPower?: boolean }) {
   return (
     <div className="bg3d" aria-hidden="true">
       <Canvas
         camera={{ position: [0, 1.2, 6.2], fov: 60 }}
-        dpr={[1, 1.5]}
-        gl={{ antialias: true, alpha: true, powerPreference: "low-power" }}
+        dpr={lowPower ? [1, 1] : [1, 1.5]}
+        gl={{ antialias: !lowPower, alpha: true, powerPreference: "low-power" }}
       >
-        <WaveField />
+        <WaveField lowPower={lowPower} />
       </Canvas>
     </div>
   );

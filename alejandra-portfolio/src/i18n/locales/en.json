@@ -3,6 +3,9 @@
     "title": "Alejandra Marulanda — Telematics & Systems Engineer",
     "description": "Portfolio of Alejandra Marulanda, Telematics and Computer Systems engineer focused on telecommunications, IoT, wireless networks and cybersecurity. Mexico City."
   },
+  "loader": {
+    "label": "Loading"
+  },
   "nav": {
     "about": "About",
     "experience": "Experience",

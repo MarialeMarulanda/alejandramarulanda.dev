@@ -33,7 +33,7 @@ export default function Navigation() {
       <nav className={`${styles.nav} glass`} aria-label={t("ariaLabel")}>
         <Link href="/" className={styles.brand} onClick={() => setOpen(false)}>
           <span className={styles.brandDot} />
-          am<span className={styles.brandTld}>.dev</span>
+          AM<span className={styles.brandTld}>.dev</span>
         </Link>
 
         <ul className={`${styles.links} ${open ? styles.linksOpen : ""}`}>

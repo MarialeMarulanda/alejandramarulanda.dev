@@ -31,14 +31,28 @@ export default function Projects() {
                 className={project.featured ? styles.featured : undefined}
               >
                 <article className={`glass glass-hover ${styles.card}`}>
-                  <div className={styles.thumb}>
-                    <img
-                      src={images.projects[project.id]}
-                      alt={t(`items.${project.id}.title`)}
-                      loading="lazy"
-                      width={1200}
-                      height={675}
-                    />
+                  <div className={styles.gallery}>
+                    {images.projects[project.id].map((mediaSrc, idx) => (
+                      <div key={idx} className={styles.thumb}>
+                        {mediaSrc.endsWith(".mp4") ? (
+                          <video
+                            src={mediaSrc}
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                          />
+                        ) : (
+                          <img
+                            src={mediaSrc}
+                            alt={`${t(`items.${project.id}.title`)} - ${idx + 1}`}
+                            loading="lazy"
+                            width={1200}
+                            height={675}
+                          />
+                        )}
+                      </div>
+                    ))}
                   </div>
                   <header className={styles.cardHeader}>
                     <span className={styles.iconWrap}>

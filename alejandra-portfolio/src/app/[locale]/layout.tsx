@@ -7,6 +7,7 @@ import { routing } from "@/i18n/routing";
 import Background3D from "@/components/3d/Background3D";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import PageLoader from "@/components/ui/PageLoader";
 import "../globals.css";
 
 const inter = Inter({
@@ -69,6 +70,7 @@ export default async function LocaleLayout({
     >
       <body>
         <NextIntlClientProvider messages={messages}>
+          <PageLoader />
           <Background3D />
           <Navigation />
           <main>{children}</main>

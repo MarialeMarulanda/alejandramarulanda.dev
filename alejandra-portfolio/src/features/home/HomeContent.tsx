@@ -88,13 +88,23 @@ export default function HomeContent() {
           <Reveal>
             <div className={`glass ${styles.featured}`}>
               <div className={styles.featuredImage}>
-                <img
-                  src={images.projects[featured.id]}
-                  alt={tProjects(`items.${featured.id}.title`)}
-                  loading="lazy"
-                  width={1200}
-                  height={675}
-                />
+                {images.projects[featured.id][0].endsWith(".mp4") ? (
+                  <video
+                    src={images.projects[featured.id][0]}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                ) : (
+                  <img
+                    src={images.projects[featured.id][0]}
+                    alt={tProjects(`items.${featured.id}.title`)}
+                    loading="lazy"
+                    width={1200}
+                    height={675}
+                  />
+                )}
               </div>
               <div className={styles.featuredBody}>
                 <p className="eyebrow">

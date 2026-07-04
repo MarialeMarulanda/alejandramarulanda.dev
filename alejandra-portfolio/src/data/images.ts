@@ -8,8 +8,20 @@
 export const images = {
   profile: "/images/main_profile.jpeg",
   projects: {
-    iot: "/images/arquitecrutaprincipalhabitatiot.jpeg",
-    antenna: "/images/antenadoblebiquadterminada.jpeg",
-    thesis: "/images/tesis1.jpeg",
+    iot: [
+      "/images/arquitecrutaprincipalhabitatiot.jpeg",
+      "/images/iot_project.jpeg",
+    ],
+    antenna: [
+      "/images/construyendoantena.mp4",
+      "/images/antenabiquad.jpeg",
+      "/images/antenadoblebiquadterminada.jpeg",
+      "/images/cloverleaf.jpeg",
+    ],
+    thesis: [
+      "/images/tesis1.jpeg",
+      "/images/tesis2.jpeg",
+      "/images/tesis3.jpeg",
+    ],
   },
 } as const;

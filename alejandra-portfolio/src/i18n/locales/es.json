@@ -3,6 +3,9 @@
     "title": "Alejandra Marulanda — Ingeniera en Telemática y Sistemas",
     "description": "Portafolio de Alejandra Marulanda, ingeniera en Telemática y Sistemas Computacionales especializada en telecomunicaciones, IoT, redes inalámbricas y ciberseguridad. CDMX, México."
   },
+  "loader": {
+    "label": "Cargando"
+  },
   "nav": {
     "about": "Sobre mí",
     "experience": "Experiencia",

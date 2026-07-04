@@ -17,13 +17,6 @@ export default function Hero() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.text}>
           <Reveal>
-            <p className={styles.status}>
-              <span className={styles.statusDot} /> link established · 2.4 GHz ·{" "}
-              {t("location")}
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.08}>
             <h1 className={styles.title}>
               <span className={styles.greeting}>{t("greeting")}</span>
               <span className={styles.name}>{t("name")}</span>
