@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import {
   ArrowRight,
   GraduationCap,
@@ -91,18 +92,19 @@ export default function HomeContent() {
                 {images.projects[featured.id][0].endsWith(".mp4") ? (
                   <video
                     src={images.projects[featured.id][0]}
+                    poster={images.videoPosters[images.projects[featured.id][0] as keyof typeof images.videoPosters]}
                     autoPlay
                     loop
                     muted
                     playsInline
                   />
                 ) : (
-                  <img
+                  <Image
                     src={images.projects[featured.id][0]}
                     alt={tProjects(`items.${featured.id}.title`)}
-                    loading="lazy"
                     width={1200}
                     height={675}
+                    sizes="(max-width: 900px) 100vw, 50vw"
                   />
                 )}
               </div>

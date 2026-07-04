@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Satellite, Radio, ShieldCheck } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -37,18 +38,19 @@ export default function Projects() {
                         {mediaSrc.endsWith(".mp4") ? (
                           <video
                             src={mediaSrc}
+                            poster={images.videoPosters[mediaSrc as keyof typeof images.videoPosters]}
                             autoPlay
                             loop
                             muted
                             playsInline
                           />
                         ) : (
-                          <img
+                          <Image
                             src={mediaSrc}
                             alt={`${t(`items.${project.id}.title`)} - ${idx + 1}`}
-                            loading="lazy"
                             width={1200}
                             height={675}
+                            sizes="(max-width: 800px) 100vw, 50vw"
                           />
                         )}
                       </div>

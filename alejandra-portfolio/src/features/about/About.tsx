@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { Network, Code2, Wrench } from "lucide-react";
 import Reveal from "@/components/ui/Reveal";
 import SectionHeader from "@/components/ui/SectionHeader";
@@ -36,13 +37,13 @@ export default function About() {
         <div className={styles.grid}>
           <Reveal className={styles.bio}>
             <div className={styles.photoFrame}>
-              <img
+              <Image
                 src={images.profile}
                 alt={t("title")}
                 className={styles.photo}
-                loading="lazy"
                 width={800}
                 height={800}
+                sizes="(max-width: 520px) 55vw, 240px"
               />
             </div>
             <p className={styles.paragraph}>{t("body1")}</p>

@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { ArrowDown, FileDown, MapPin, Send } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/ui/BrandIcons";
 import { Link } from "@/i18n/navigation";
@@ -78,12 +79,14 @@ export default function Hero() {
 
         <Reveal delay={0.2} className={styles.portraitWrap}>
           <div className={styles.portraitRing}>
-            <img
+            <Image
               src={images.profile}
               alt={t("name")}
               className={styles.portrait}
               width={800}
               height={800}
+              sizes="(max-width: 860px) 220px, 320px"
+              priority
             />
           </div>
         </Reveal>

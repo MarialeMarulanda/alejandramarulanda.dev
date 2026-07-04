@@ -24,4 +24,8 @@ export const images = {
       "/images/tesis3.jpeg",
     ],
   },
+  /** Poster (miniatura) mostrado mientras el video carga o si el navegador no puede reproducirlo. */
+  videoPosters: {
+    "/images/construyendoantena.mp4": "/images/construyendoantena-poster.jpg",
+  },
 } as const;
