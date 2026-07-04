@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "Alejandra Marulanda — Ingeniera en Telemática y Sistemas",
+    "description": "Portafolio de Alejandra Marulanda, ingeniera en Telemática y Sistemas Computacionales especializada en telecomunicaciones, IoT, redes inalámbricas y ciberseguridad. CDMX, México."
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "contact": "Contacto",
+    "ariaLabel": "Navegación principal",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "switchLocale": "Cambiar idioma"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Alejandra Marulanda",
+    "role": "Ingeniera en Telemática & Sistemas",
+    "tagline": "Diseño y construyo soluciones donde las redes, el software y el hardware se encuentran: telecomunicaciones, IoT y sistemas distribuidos aplicados a proyectos espaciales y ambientales.",
+    "ctaProjects": "Ver proyectos",
+    "ctaContact": "Contáctame",
+    "ctaCv": "Descargar CV",
+    "location": "CDMX, México",
+    "scroll": "Desliza para explorar"
+  },
+  "home": {
+    "stats": [
+      { "value": "2", "label": "Ingenierías" },
+      { "value": "3", "label": "Idiomas" },
+      { "value": "3", "label": "Certificaciones" },
+      { "value": "5+", "label": "Proyectos y roles" }
+    ],
+    "exploreTitle": "Explora el portafolio",
+    "exploreSubtitle": "Cada sección tiene su propia página",
+    "explore": {
+      "about": "Perfil profesional, habilidades técnicas e idiomas.",
+      "experience": "Trayectoria laboral, salto por salto.",
+      "projects": "Casos de estudio de redes, IoT, RF y ciberseguridad.",
+      "education": "Doble titulación, formación y certificaciones.",
+      "contact": "Hablemos de tu próximo proyecto."
+    },
+    "goTo": "Abrir sección",
+    "featuredTitle": "Proyecto destacado",
+    "viewAllProjects": "Ver todos los proyectos",
+    "ctaTitle": "¿Tienes un proyecto en mente?",
+    "ctaBody": "Estoy disponible para colaborar en telecomunicaciones, IoT y desarrollo.",
+    "ctaButton": "Ir a contacto"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Perfil profesional",
+    "body1": "Soy estudiante avanzada de Ingeniería Telemática (UPIITA-IPN) con una segunda formación en Ingeniería en Sistemas Computacionales (Universidad ICEL). Mi enfoque está en telecomunicaciones, IoT y sistemas distribuidos, con experiencia práctica en redes inalámbricas, diseño de antenas y arquitecturas IoT aplicadas a proyectos análogos espaciales y ambientales.",
+    "body2": "Me interesa crecer en comunicaciones, ciberseguridad e infraestructura de red, combinando teoría e implementación práctica para construir soluciones eficientes y confiables.",
+    "skillsTitle": "Habilidades técnicas",
+    "groups": {
+      "networks": {
+        "title": "Redes y Telecomunicaciones",
+        "items": [
+          "Sistemas celulares (2G–5G)",
+          "Teoría de antenas y líneas de transmisión",
+          "TCP/IP y modelo OSI",
+          "Cisco Packet Tracer",
+          "IoT: ESP32, Raspberry Pi, MQTT, ESP-NOW",
+          "Linux (Ubuntu, Kali)"
+        ]
+      },
+      "development": {
+        "title": "Desarrollo de Software",
+        "items": [
+          "Programación en C",
+          "HTML, CSS, JavaScript",
+          "Node.js",
+          "SQL y MySQL",
+          "Stacks MEAN y MERN",
+          "Estructuras de datos"
+        ]
+      },
+      "tools": {
+        "title": "Metodologías y Herramientas",
+        "items": [
+          "Scrum y metodologías ágiles",
+          "Documentación técnica",
+          "Traducción técnica inglés–español",
+          "Microsoft Office",
+          "VNA y analizador de espectro"
+        ]
+      }
+    },
+    "languagesTitle": "Idiomas",
+    "languages": [
+      { "name": "Español", "level": "Nativo" },
+      { "name": "Inglés", "level": "Avanzado" },
+      { "name": "Chino mandarín", "level": "Básico" }
+    ],
+    "softTitle": "Habilidades blandas",
+    "soft": [
+      "Comunicación efectiva",
+      "Resolución de problemas",
+      "Trabajo en equipo",
+      "Iniciativa",
+      "Aprendizaje rápido"
+    ]
+  },
+  "experience": {
+    "title": "Experiencia",
+    "subtitle": "Trayectoria profesional",
+    "items": {
+      "aem": {
+        "role": "Gestión de Bases de Datos — Servicio Social",
+        "company": "Agencia Espacial Mexicana",
+        "period": "Ene 2024 – Jun 2024",
+        "points": [
+          "Colaboré en el diseño conceptual y lógico de una base de datos para gestión de inventario.",
+          "Contribuí a la documentación técnica, incluyendo transcripción de conferencias y traducción inglés–español."
+        ]
+      },
+      "wordstaff": {
+        "role": "Implementación de Aplicaciones",
+        "company": "WordStaff USA",
+        "period": "Abr 2023 – Oct 2023",
+        "points": [
+          "Personalicé y adapté Forms.app a los requerimientos operativos de la empresa.",
+          "Colaboré con equipos administrativos y técnicos para mejorar la recolección de datos y la eficiencia de procesos.",
+          "Documenté procedimientos y brindé soporte a usuarios para asegurar la adopción exitosa de la herramienta."
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Casos de estudio destacados",
+    "items": {
+      "antenna": {
+        "title": "Diseño de Antenas y Monitoreo Inalámbrico",
+        "org": "UPIITA-IPN",
+        "period": "Ene 2025 – Jul 2025",
+        "points": [
+          "Aplicación de teoría de antenas y líneas de transmisión (ganancia, acoplamiento de impedancias, frecuencia de operación, patrones de radiación) para diseñar y prototipar antenas WiFi de 2.4 GHz (biquad y cloverleaf).",
+          "Fabricación y prueba de prototipos para un sistema inalámbrico de monitoreo de calidad del agua desplegado en el lago de Xochimilco.",
+          "Caracterización de desempeño con VNA y analizador de espectro: pérdidas de retorno, ancho de banda y rendimiento del enlace."
+        ]
+      },
+      "iot": {
+        "title": "Red IoT Distribuida para Hábitats Espaciales Análogos",
+        "org": "UPIITA-IPN · Proyecto de investigación",
+        "period": "Ene 2025 – Actual",
+        "points": [
+          "Diseño y simulación de una red IoT distribuida para monitoreo y control automático en hábitats espaciales análogos.",
+          "Desarrollo de un sistema distribuido con ESP32, Raspberry Pi, WiFi, MQTT y ESP-NOW.",
+          "Implementación de enlaces de datos de baja latencia y tolerantes a fallos para redes de sensores en entornos restringidos.",
+          "Desarrollo de topología de red, enrutamiento y estrategias de control para monitoreo confiable en tiempo real."
+        ]
+      },
+      "thesis": {
+        "title": "Tesis: Ciberseguridad Básica en la CDMX",
+        "org": "Universidad ICEL",
+        "period": "Sep 2025 – Actual",
+        "points": [
+          "Desarrollo de una guía técnica en lenguaje accesible para ayudar a usuarios con alfabetización digital limitada a entender y prevenir ciberataques comunes en México.",
+          "Enfoque en estrategias prácticas contra amenazas como phishing, malware, SIM swapping e ingeniería social.",
+          "Busca reducir la vulnerabilidad de los usuarios y promover prácticas digitales más seguras mediante guías claras y fáciles de seguir."
+        ]
+      }
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "subtitle": "Formación académica",
+    "items": {
+      "upiita": {
+        "degree": "Ingeniería en Telemática",
+        "school": "UPIITA — Instituto Politécnico Nacional",
+        "period": "2018 – Ene 2027"
+      },
+      "icel": {
+        "degree": "Ingeniería en Sistemas Computacionales",
+        "school": "Universidad ICEL",
+        "period": "2020 – 2025"
+      },
+      "eccc": {
+        "degree": "Técnico en Informática Administrativa",
+        "school": "ECCC",
+        "period": "2015 – 2018"
+      }
+    },
+    "certificationsTitle": "Certificaciones",
+    "certifications": [
+      "Introducción a Cloud Computing — IBM, 2023",
+      "Introducción al Desarrollo Web con HTML, CSS y JavaScript — IBM, 2023",
+      "Certificación en Microsoft Office — Testing Program, 2018"
+    ]
+  },
+  "contact": {
+    "title": "¿Trabajamos juntos?",
+    "body": "Estoy abierta a oportunidades en telecomunicaciones, redes, IoT y ciberseguridad. Escríbeme y conversemos.",
+    "emailCta": "Enviar correo",
+    "phoneLabel": "Teléfono",
+    "locationLabel": "Ubicación",
+    "location": "Ciudad de México, México"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Construido con Next.js, TypeScript y Three.js"
+  }
+}

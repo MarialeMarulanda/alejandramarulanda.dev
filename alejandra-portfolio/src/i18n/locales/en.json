@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "title": "Alejandra Marulanda — Telematics & Systems Engineer",
+    "description": "Portfolio of Alejandra Marulanda, Telematics and Computer Systems engineer focused on telecommunications, IoT, wireless networks and cybersecurity. Mexico City."
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "contact": "Contact",
+    "ariaLabel": "Main navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLocale": "Switch language"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Alejandra Marulanda",
+    "role": "Telematics & Systems Engineer",
+    "tagline": "I design and build solutions where networks, software and hardware meet: telecommunications, IoT and distributed systems applied to space-analog and environmental projects.",
+    "ctaProjects": "View projects",
+    "ctaContact": "Contact me",
+    "ctaCv": "Download CV",
+    "location": "Mexico City, Mexico",
+    "scroll": "Scroll to explore"
+  },
+  "home": {
+    "stats": [
+      { "value": "2", "label": "Engineering degrees" },
+      { "value": "3", "label": "Languages" },
+      { "value": "3", "label": "Certifications" },
+      { "value": "5+", "label": "Projects & roles" }
+    ],
+    "exploreTitle": "Explore the portfolio",
+    "exploreSubtitle": "Each section lives on its own page",
+    "explore": {
+      "about": "Professional profile, technical skills and languages.",
+      "experience": "Career path, hop by hop.",
+      "projects": "Case studies in networking, IoT, RF and cybersecurity.",
+      "education": "Dual degree, academic background and certifications.",
+      "contact": "Let's talk about your next project."
+    },
+    "goTo": "Open section",
+    "featuredTitle": "Featured project",
+    "viewAllProjects": "View all projects",
+    "ctaTitle": "Have a project in mind?",
+    "ctaBody": "I'm available to collaborate on telecommunications, IoT and development.",
+    "ctaButton": "Go to contact"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Professional profile",
+    "body1": "I'm a senior Telematics Engineering student (UPIITA-IPN) with a second degree in Computer Systems Engineering (Universidad ICEL). My focus is on telecommunications, IoT and distributed systems, with hands-on experience in wireless networks, antenna design and IoT architectures applied to space-analog and environmental projects.",
+    "body2": "I'm interested in advancing in communications, cybersecurity and network infrastructure, combining theory and hands-on implementation to build efficient and reliable solutions.",
+    "skillsTitle": "Technical skills",
+    "groups": {
+      "networks": {
+        "title": "Networks & Telecommunications",
+        "items": [
+          "Cellular systems (2G–5G)",
+          "Antenna theory & transmission lines",
+          "TCP/IP and OSI models",
+          "Cisco Packet Tracer",
+          "IoT: ESP32, Raspberry Pi, MQTT, ESP-NOW",
+          "Linux (Ubuntu, Kali)"
+        ]
+      },
+      "development": {
+        "title": "Software Development",
+        "items": [
+          "C programming",
+          "HTML, CSS, JavaScript",
+          "Node.js",
+          "SQL & MySQL",
+          "MEAN & MERN stacks",
+          "Data structures"
+        ]
+      },
+      "tools": {
+        "title": "Methodologies & Tools",
+        "items": [
+          "Scrum & Agile",
+          "Technical documentation",
+          "English–Spanish technical translation",
+          "Microsoft Office",
+          "VNA & spectrum analyzer"
+        ]
+      }
+    },
+    "languagesTitle": "Languages",
+    "languages": [
+      { "name": "Spanish", "level": "Native" },
+      { "name": "English", "level": "Advanced" },
+      { "name": "Mandarin Chinese", "level": "Basic" }
+    ],
+    "softTitle": "Soft skills",
+    "soft": [
+      "Strong communication",
+      "Problem-solving",
+      "Team collaboration",
+      "Initiative",
+      "Fast learner"
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional background",
+    "items": {
+      "aem": {
+        "role": "Database Management — Social Service",
+        "company": "Agencia Espacial Mexicana",
+        "period": "Jan 2024 – Jun 2024",
+        "points": [
+          "Collaborated in the conceptual and logical design of a database for inventory management.",
+          "Contributed to technical documentation, including conference transcription and English–Spanish translation."
+        ]
+      },
+      "wordstaff": {
+        "role": "Application Implementation",
+        "company": "WordStaff USA",
+        "period": "Apr 2023 – Oct 2023",
+        "points": [
+          "Customized and adapted Forms.app to meet the company's operational requirements.",
+          "Collaborated with administrative and technical teams to improve data collection and process efficiency.",
+          "Documented procedures and provided user support to ensure successful tool adoption."
+        ]
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Featured case studies",
+    "items": {
+      "antenna": {
+        "title": "Antenna Design & Wireless Monitoring",
+        "org": "UPIITA-IPN",
+        "period": "Jan 2025 – Jul 2025",
+        "points": [
+          "Applied transmission line and antenna theory (gain, impedance matching, operating frequency, radiation patterns) to design and prototype 2.4 GHz WiFi antennas (biquad and cloverleaf).",
+          "Fabricated and tested antenna prototypes for a wireless water-quality monitoring system deployed in the Xochimilco lake area.",
+          "Characterized performance using a Vector Network Analyzer (VNA) and spectrum analyzer to evaluate return loss, bandwidth and overall link performance."
+        ]
+      },
+      "iot": {
+        "title": "Distributed IoT Network for Analog Space Habitats",
+        "org": "UPIITA-IPN · Research project",
+        "period": "Jan 2025 – Present",
+        "points": [
+          "Design and simulation of a distributed IoT network for monitoring and automatic control in analog space habitats.",
+          "Development of a distributed IoT system using ESP32, Raspberry Pi, WiFi, MQTT and ESP-NOW.",
+          "Implementation of low-latency, fault-tolerant data links for sensor networks in constrained environments.",
+          "Development of network topology, routing and control strategies for reliable real-time monitoring."
+        ]
+      },
+      "thesis": {
+        "title": "Thesis: Basic Cybersecurity in Mexico City",
+        "org": "Universidad ICEL",
+        "period": "Sep 2025 – Present",
+        "points": [
+          "Developing a technical guide in accessible language to help users with limited digital literacy understand and prevent common cyber attacks in Mexico.",
+          "Focused on practical strategies against threats such as phishing, malware, SIM swapping and social engineering.",
+          "Aims to reduce user vulnerability and promote safer digital practices through clear, easy-to-follow guidance."
+        ]
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic background",
+    "items": {
+      "upiita": {
+        "degree": "B.Eng. in Telematics Engineering",
+        "school": "UPIITA — Instituto Politécnico Nacional",
+        "period": "2018 – Jan 2027"
+      },
+      "icel": {
+        "degree": "B.Eng. in Computer Systems Engineering",
+        "school": "Universidad ICEL",
+        "period": "2020 – 2025"
+      },
+      "eccc": {
+        "degree": "Technical Degree in Administrative Computing",
+        "school": "ECCC",
+        "period": "2015 – 2018"
+      }
+    },
+    "certificationsTitle": "Certifications",
+    "certifications": [
+      "Introduction to Cloud Computing — IBM, 2023",
+      "Introduction to Web Development with HTML, CSS, JavaScript — IBM, 2023",
+      "Microsoft Office Suite proficiency — Testing Program, 2018"
+    ]
+  },
+  "contact": {
+    "title": "Let's work together",
+    "body": "I'm open to opportunities in telecommunications, networking, IoT and cybersecurity. Reach out and let's talk.",
+    "emailCta": "Send email",
+    "phoneLabel": "Phone",
+    "locationLabel": "Location",
+    "location": "Mexico City, Mexico"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, TypeScript & Three.js"
+  }
+}

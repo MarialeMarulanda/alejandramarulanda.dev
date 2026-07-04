@@ -1,0 +1,43 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding-block: 2rem;
+  margin-top: 2rem;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-faint);
+}
+
+.builtWith {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  transition: color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.socialLink:hover {
+  color: var(--accent);
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+}

@@ -1,0 +1,141 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.photoFrame {
+  width: min(240px, 55vw);
+  aspect-ratio: 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 12px 40px hsla(338, 78%, 52%, 0.18);
+  margin-bottom: 0.5rem;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.paragraph {
+  color: var(--text-dim);
+}
+
+.subheading {
+  font-size: 1.05rem;
+  margin-top: 1.25rem;
+  color: var(--text);
+}
+
+.languages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.signal {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  width: 26px;
+}
+
+.bar {
+  width: 3px;
+  border-radius: 1px;
+  background: hsl(336, 20%, 85%);
+}
+
+.barOn {
+  background: var(--accent);
+  box-shadow: 0 0 6px hsla(338, 78%, 52%, 0.45);
+}
+
+.langName {
+  font-weight: 500;
+}
+
+.langLevel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+.soft {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skillCard {
+  padding: 1.5rem 1.75rem;
+}
+
+.skillTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.skillIcon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.skillList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem 1.25rem;
+}
+
+.skillList li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: 0.92rem;
+  color: var(--text-dim);
+}
+
+.skillList li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 0.7rem;
+  top: 0.25em;
+}
+
+@media (min-width: 520px) {
+  .skillList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 5fr 6fr;
+  }
+}

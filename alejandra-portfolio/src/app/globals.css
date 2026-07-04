@@ -1,0 +1,255 @@
+/* ============================================
+   Design tokens — "Rosa & Crema" light system
+   ============================================ */
+:root {
+  /* Surfaces — warm cream */
+  --bg: hsl(35, 55%, 96%);
+  --bg-soft: hsl(33, 50%, 92%);
+  --surface: hsla(0, 0%, 100%, 0.55);
+  --surface-strong: hsla(0, 0%, 100%, 0.82);
+  --border: hsla(338, 45%, 45%, 0.14);
+  --border-bright: hsla(338, 78%, 56%, 0.45);
+
+  /* Accents — rose & coral */
+  --accent: hsl(338, 78%, 52%);
+  --accent-soft: hsla(338, 78%, 56%, 0.1);
+  --accent-2: hsl(18, 85%, 60%);
+  --accent-2-soft: hsla(18, 85%, 62%, 0.14);
+
+  /* Text — warm plum */
+  --text: hsl(336, 32%, 16%);
+  --text-dim: hsl(336, 14%, 38%);
+  --text-faint: hsl(336, 10%, 52%);
+
+  /* Type — variables injected by next/font in layout.tsx */
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  /* Rhythm */
+  --radius: 16px;
+  --radius-sm: 10px;
+  --container: 1120px;
+  --nav-height: 72px;
+}
+
+/* ============================================
+   Reset
+   ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + 16px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 15% -10%, hsla(338, 80%, 75%, 0.22), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 5%, hsla(18, 90%, 72%, 0.2), transparent);
+  background-repeat: no-repeat;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  min-height: 100dvh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+::selection {
+  background: hsla(338, 78%, 56%, 0.25);
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(336, 22%, 82%);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(336, 30%, 72%);
+}
+
+/* ============================================
+   Utilities
+   ============================================ */
+.container {
+  width: min(var(--container), 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(4.5rem, 10vh, 7.5rem);
+  position: relative;
+}
+
+/* Inner pages: clear the fixed navbar */
+.page {
+  padding-top: calc(var(--nav-height) + 1.5rem);
+  min-height: 100dvh;
+}
+
+/* Glass panel — frosted cream */
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 32px 0 hsla(338, 50%, 40%, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.glass-hover:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-bright);
+  background: var(--surface-strong);
+}
+
+/* Protocol-style eyebrow label: "// 02 · experience" */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: lowercase;
+  color: var(--accent);
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Tech tag chip */
+.chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  color: var(--text-dim);
+  background: var(--accent-soft);
+  border: 1px solid hsla(338, 78%, 56%, 0.22);
+  border-radius: 999px;
+  padding: 0.25rem 0.7rem;
+  white-space: nowrap;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(100deg, hsl(338, 78%, 52%), hsl(18, 85%, 58%));
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0 4px 24px hsla(338, 78%, 52%, 0.3);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px hsla(338, 78%, 52%, 0.42);
+}
+
+.btn-ghost {
+  border-color: var(--border);
+  color: var(--text);
+  background: var(--surface);
+  backdrop-filter: blur(8px);
+}
+.btn-ghost:hover {
+  border-color: var(--border-bright);
+  transform: translateY(-2px);
+}
+
+/* Fixed 3D background canvas host */
+.bg3d {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* ============================================
+   Accessibility — reduced motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
